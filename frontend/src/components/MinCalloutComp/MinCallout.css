@@ -1,0 +1,25 @@
+/* Source for callouts: https://codepen.io/superjaberwocky/pen/rLKxOa in SCSS
+ * Then translated to CSS using https://jsonformatter.org/scss-to-css
+ * This callout is now setup more like a divider
+ */
+ .left-min-callout {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-left-width: 5px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-radius: 4px;
+ }
+
+ .right-min-callout {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 5px;
+    border-radius: 4px;
+ }

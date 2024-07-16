@@ -1,4 +1,5 @@
-import shadow from "../assets/thin_shadow_smaller.png";
+import { ReactNode, Children } from "react";
+import './MinCallout.css'
 
 const MinimalCallout = () => {
   return (
