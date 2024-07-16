@@ -25,6 +25,7 @@
  
   .callout-default {
     border-left-color: #777;
+    border-right-color: #777;
  }
   .callout-default h4 {
     color: #777;
@@ -32,6 +33,7 @@
  
   .callout-primary {
     border-left-color: #428bca;
+    border-right-color: #428bca;
  }
   .callout-primary h4 {
     color: #428bca;
@@ -39,6 +41,7 @@
  
   .callout-success {
     border-left-color: #5cb85c;
+    border-right-color: #5cb85c;
  }
   .callout-success h4 {
     color: #5cb85c;
@@ -46,6 +49,7 @@
  
   .callout-danger {
     border-left-color: #d9534f;
+    border-right-color: #d9534f;
  }
   .callout-danger h4 {
     color: #d9534f;
@@ -53,6 +57,7 @@
  
   .callout-warning {
     border-left-color: #f0ad4e;
+    border-right-color: #f0ad4e;
  }
   .callout-warning h4 {
     color: #f0ad4e;
@@ -60,6 +65,7 @@
  
   .callout-info {
     border-left-color: #5bc0de;
+    border-right-color: #5bc0de;
  }
   .callout-info h4 {
     color: #5bc0de;
@@ -67,6 +73,7 @@
  
   .callout-bdc {
     border-left-color: #29527a;
+    border-right-color: #29527a;
  }
   .callout-bdc h4 {
     color: #29527a;
