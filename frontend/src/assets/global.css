@@ -4,13 +4,11 @@
  .callout {
     padding: 10px;
     margin: 10px 0;
- }
-
- .callout-full {
     border: 1px solid;
     border-left-width: 5px;
     border-radius: 3px;
  }
+ 
   .callout h4 {
     margin-top: 0;
     margin-bottom: 5px;

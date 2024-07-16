@@ -1,11 +1,15 @@
 import { ReactNode, Children } from "react";
-import './MinCallout.css'
+import "./MinCallout.css";
 
-const MinimalCallout = () => {
+interface MinCalloutProps {
+  children?: ReactNode;
+  type: "default" | "left" | "right";
+}
+
+const MinimalCallout = ({ children, type = "default" }: MinCalloutProps) => {
   return (
     <>
-      <div>
-      </div>
+      <div></div>
     </>
   );
 };

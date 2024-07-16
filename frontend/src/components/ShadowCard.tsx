@@ -8,11 +8,16 @@ interface ShadowCardProps {
   title?: string;
 }
 
-const ShadowCard = ({ children, shadowGap, maxWidth, title }: ShadowCardProps) => {
+const ShadowCard = ({
+  children,
+  shadowGap,
+  maxWidth,
+  title,
+}: ShadowCardProps) => {
   const cardBuffer = 20;
   const cardStyle = {
     width: maxWidth,
-    border: "1px solid"
+    border: "1px solid",
   };
 
   const floatStyle = {
@@ -23,11 +28,11 @@ const ShadowCard = ({ children, shadowGap, maxWidth, title }: ShadowCardProps) =
   const shadowStyle = {
     height: 40,
     width: maxWidth,
-    opacity: 0.25
+    opacity: 0.25,
   };
 
   const floatDiv = <div style={floatStyle}></div>;
-  const titleHeader = <h5 className="card-title">{title}</h5>
+  const titleHeader = <h5 className="card-title">{title}</h5>;
   return (
     <>
       <div>
