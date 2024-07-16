@@ -9,6 +9,7 @@ const ShadowCard = ({ shadowGap, maxWidth }: ShadowCardProps) => {
   const cardBuffer = 20;
   const cardStyle = {
     width: maxWidth,
+    border: "1px solid"
   };
 
   const floatStyle = {
@@ -19,6 +20,7 @@ const ShadowCard = ({ shadowGap, maxWidth }: ShadowCardProps) => {
   const shadowStyle = {
     height: 40,
     width: maxWidth,
+    opacity: 0.25
   };
 
   const floatDiv = <div style={floatStyle}></div>;
@@ -34,9 +36,6 @@ const ShadowCard = ({ shadowGap, maxWidth }: ShadowCardProps) => {
               Does this shadow effect really look good? Do I need something else
               here?
             </p>
-            <a href="#" className="btn btn-primary">
-              This button does nothing
-            </a>
           </div>
         </div>
         <br />
