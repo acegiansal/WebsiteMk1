@@ -1,11 +1,14 @@
+import { ReactNode, Children } from "react";
 import shadow from "../assets/thin_shadow_smaller.png";
 
 interface ShadowCardProps {
   shadowGap: number;
   maxWidth: number;
+  children?: ReactNode;
+  title?: string;
 }
 
-const ShadowCard = ({ shadowGap, maxWidth }: ShadowCardProps) => {
+const ShadowCard = ({ children, shadowGap, maxWidth, title }: ShadowCardProps) => {
   const cardBuffer = 20;
   const cardStyle = {
     width: maxWidth,
@@ -24,18 +27,15 @@ const ShadowCard = ({ shadowGap, maxWidth }: ShadowCardProps) => {
   };
 
   const floatDiv = <div style={floatStyle}></div>;
-
+  const titleHeader = <h5 className="card-title">{title}</h5>
   return (
     <>
       <div>
         <div className="card border-dark mx-1" style={cardStyle}>
           <div className="card-header">Test Floating Card</div>
           <div className="card-body">
-            <h5 className="card-title">Go sens Go?</h5>
-            <p className="card-text">
-              Does this shadow effect really look good? Do I need something else
-              here?
-            </p>
+            {title && titleHeader}
+            {children}
           </div>
         </div>
         <br />

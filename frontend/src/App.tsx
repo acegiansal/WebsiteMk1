@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <ShadowCard shadowGap={20} maxWidth={300}></ShadowCard>
+    <ShadowCard shadowGap={20} maxWidth={300} text='Hello'>Hello Again</ShadowCard>
     </>
   )
 }
