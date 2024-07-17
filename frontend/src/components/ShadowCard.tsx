@@ -1,6 +1,9 @@
 import { ReactNode, Children } from "react";
 import shadow from "../assets/thin_shadow_smaller.png";
 
+/**
+ * NOTE! The shadow itself is 40px, thus the max height should always take that into account
+ */
 interface ShadowCardProps {
   shadowGap: number;
   maxWidth: number;

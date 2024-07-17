@@ -5,6 +5,7 @@ interface MinCalloutProps {
   children?: ReactNode;
   type?: "default" | "left" | "right";
   spacing?: number;
+  height?: number;
   colour?:
     | "default"
     | "primary"
@@ -20,6 +21,7 @@ const MinimalCallout = ({
   type = "default",
   colour = "default",
   spacing = 2,
+  height,
 }: MinCalloutProps) => {
   let calloutClass = "min-callout ";
   if (type != "default") {
@@ -31,9 +33,15 @@ const MinimalCallout = ({
   //Spacing
   calloutClass += " mx-" + spacing;
 
+  let calloutStyle = {
+    height: height,
+  };
+
   return (
     <>
-      <div className={calloutClass}>{children}</div>
+      <div className={calloutClass} style={calloutStyle}>
+        {children}
+      </div>
     </>
   );
 };

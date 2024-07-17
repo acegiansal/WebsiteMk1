@@ -3,23 +3,24 @@
  * This callout is now setup more like a divider
  */
 
- .min-callout {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid;
-    border-left-width: 5px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-right-width: 5px;
-    border-radius: 4px;
- }
+.min-callout {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid;
+  border-left-width: 5px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 5px;
+  border-radius: 4px;
+  display: inline-block;
+}
 
- .left-min-callout {
-    border-right-width: 0px;
-    border-left-width: 5px;
- }
+.left-min-callout {
+  border-right-width: 0px;
+  border-left-width: 5px;
+}
 
- .right-min-callout {
-    border-left-width: 0px;
-    border-right-width: 5px;
- }
+.right-min-callout {
+  border-left-width: 0px;
+  border-right-width: 5px;
+}
