@@ -1,16 +1,34 @@
+import { useState, useEffect } from "react";
+
 import "./TableAid.css";
 
 interface TableAidProps {
   data: Array<Object>;
+  url?: string;
 }
 
-const TableAid = ({ data }: TableAidProps) => {
+const TableAid = ({ data, url }: TableAidProps) => {
   let keys: Array<string>;
 
   if (data.length > 0) {
     keys = Object.keys(data[0]);
   } else {
     keys = [];
+  }
+
+  const [table_data, setTableData] = useState([]);
+
+  if (url) {
+    useEffect(() => {
+      fetch(url)
+        .then((response) => response.json())
+        .then((info) => {
+          setTableData(info);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    });
   }
 
   return (
