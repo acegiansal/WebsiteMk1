@@ -1,7 +1,7 @@
 import "./TableAid.css";
 
 interface TableAidProps {
-  data: Array<JSON>;
+  data: Array<Object>;
 }
 
 const TableAid = ({ data }: TableAidProps) => {
@@ -15,16 +15,18 @@ const TableAid = ({ data }: TableAidProps) => {
 
   return (
     <>
-      <table>
-        <tr>
-          {keys.map((key) => (
-            <th>{key}</th>
-          ))}
-        </tr>
+      <table className="table">
+        <thead>
+          <tr>
+            {keys.map((key) => (
+              <th>{key}</th>
+            ))}
+          </tr>
+        </thead>
         {data.map((node) => (
           <tr>
             {Object.entries(node).map(([key, value], index) => (
-              <td>value</td>
+              <td>{value}</td>
             ))}
           </tr>
         ))}

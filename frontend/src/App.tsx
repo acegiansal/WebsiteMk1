@@ -6,35 +6,43 @@ import ShadowCard from "./components/ShadowCard";
 import MinimalCallout from "./components/MinCalloutComp/MinimalCallout";
 import TitleCard from "./components/TitleCardComp/TitleCard";
 import TableAid from "./components/TableAidComp/TableAid";
+import TableGrid from "./components/RowControl/TableGrid";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  let testData = [
+    { Test: 1, nothing: "today", Go: "sens go" },
+    { Test: 2, nothing: "YESTERDAY", Go: "SENS GO" },
+  ];
+
   return (
     <>
       <TitleCard
-        title="This is a test"
+        title="This is a Title"
         height={500}
         textColour="black"
         backgroundColour="white"
       ></TitleCard>
 
-      <div>
-        <span>
-          <MinimalCallout type="left" spacing={3} colour="bdc">
-            Hello, this is a test
-          </MinimalCallout>
-        </span>
-        <span>
-          <MinimalCallout type="right" spacing={3} colour="info">
-            Hello
-          </MinimalCallout>
-        </span>
-      </div>
+      <TableGrid>
+        <p>Hello</p>
+        <p>Again</p>
+      </TableGrid>
     </>
   );
 }
 
+/*
+      <div>
+        <MinimalCallout type="left" spacing={3} colour="info">
+          Hello, this is a test
+        </MinimalCallout>
+        <MinimalCallout type="left" spacing={3} colour="bdc">
+          <TableAid data={testData}></TableAid>
+        </MinimalCallout>
+      </div>
+*/
 /**
  * (
     <>
