@@ -1,6 +1,6 @@
 import { ReactNode, Children } from "react";
 
-import "./TableGrid.css";
+import "./WeightedRow.css";
 
 interface TableGridProps {
   children: ReactNode;
