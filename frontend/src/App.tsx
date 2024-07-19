@@ -6,7 +6,8 @@ import ShadowCard from "./components/ShadowCard";
 import MinimalCallout from "./components/MinCalloutComp/MinimalCallout";
 import TitleCard from "./components/TitleCardComp/TitleCard";
 import TableAid from "./components/TableAidComp/TableAid";
-import WeightedRow from "./components/WeightedRow/WeightedRow";
+import WeightedRow from "./components/WeightedRowComp/WeightedRow";
+import WishObjectForm from "./components/WishObjectFormComp/WishObjectForm";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,6 +35,8 @@ function App() {
         <div>Another Test?</div>
         <div>Another another go sens go</div>
       </WeightedRow>
+      <hr />
+      <WishObjectForm></WishObjectForm>
     </>
   );
 }
