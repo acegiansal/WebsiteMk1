@@ -1,3 +1,7 @@
-td {
+.weighted-row {
   border: 1px solid;
+}
+
+.biased-row {
+  width: 70%
 }

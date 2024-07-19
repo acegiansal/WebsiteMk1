@@ -6,7 +6,7 @@ import ShadowCard from "./components/ShadowCard";
 import MinimalCallout from "./components/MinCalloutComp/MinimalCallout";
 import TitleCard from "./components/TitleCardComp/TitleCard";
 import TableAid from "./components/TableAidComp/TableAid";
-import TableGrid from "./components/RowControl/TableGrid";
+import TableGrid from "./components/WeightedRow/WeightedRow";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,9 +25,9 @@ function App() {
         backgroundColour="white"
       ></TitleCard>
 
-      <TableGrid>
-        <p>Hello</p>
-        <p>Again</p>
+      <TableGrid bias="right">
+        <div>This is a test</div>
+        <div>Another Test?</div>
       </TableGrid>
     </>
   );
