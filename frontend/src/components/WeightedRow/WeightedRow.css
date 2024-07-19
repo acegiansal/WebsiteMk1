@@ -1,7 +1,8 @@
 .weighted-row {
+  padding: 10px;
   border: 1px solid;
 }
 
 .biased-row {
-  width: 70%
+  border-left-width: 3px;
 }
