@@ -26,7 +26,11 @@ function App() {
       ></TitleCard>
 
       <WeightedRow bias="left" strength={50} horizontalMargin="10px">
-        <div>This is a test</div>
+        <div>
+          This is a test
+          <br />
+          how big does it go?
+        </div>
         <div>Another Test?</div>
         <div>Another another go sens go</div>
       </WeightedRow>
